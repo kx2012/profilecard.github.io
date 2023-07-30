@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DAFDBA;
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+max-width: 370px;
+width: 100%;
+background: #9AEBA3;
+border-radius: 24px;
+padding: 25px;
+box-shadow: 0 5px 10px rgb(0, 0, 0.1);
+}
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: black;
+    padding: 4px;
+    margin-bottom: 10px;
+
+ 
+
+
+
+}
+.profile-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+ 
+
+
+}
+.card .textx{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.textx .name{
+    font-size: 24px;
+    font-weight: bold;
+}
+.textx .job{
+    font-size: 15px;
+    font-weight: bold;
+}
+.card .media{
+    display: flex;
+    align-items: center;
+}
+.media .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+
+    font-size: 18px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 20px 8px;
+    background-color: #4070f4 ;
+    text-decoration: none;
+}
+.media .youtube {
+    background-color: red;
+
+}
+.media .instagram {
+    background-color: purple;
+
+}
+.media .facebook {
+    background-color: rgb(23, 23, 160);
+
+}
+.card .buttons{
+    display: flex;
+    align-items: center;
+}
+.buttons .button{
+    color: black;;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 24px;
+    margin: 0 10px;
+    background-color: #4070f4;
+    cursor: pointer;
+    padding: 8px 24px;
+    border: none;
+    transition: all 0.3s ease;
+
+
+}
+.buttons .button:hover{
+    background-color: #0e4bf1;
+}
+.analytics  {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+.analytics .data {
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 0 20px;
+    border-right: 2px solid #5A6773;
+}
+.data i{
+    font-size: 18px;
+    margin-right: 6px;
+}
+.data:last-child {
+    border-right: none;
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 36%;
+    background-color: #75A3BF;
+    border-radius: 24px 24px 0 0;
+}
